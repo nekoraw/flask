@@ -961,7 +961,8 @@ class Flask(App):
                 "Install Flask with the 'async' extra in order to use async views."
             ) from None
 
-        return asgiref_async_to_sync(func)
+        #return asgiref_async_to_sync(func)
+        return None
 
     def url_for(
         self,
